@@ -7,7 +7,7 @@ tool:
   - тело
 action:
   - перемещать
-object: груз
+object: тело
 field_out: механическое
 field_in: механическое
 transformation:
@@ -22,6 +22,7 @@ tags:
   - Фактура
 source: https://www.techinsider.ru/gadgets/238515-kak-legko-perevezti-gruz-po-stupenkam/
 ---
+
 ## Аннотация
 *Обычную грузовую тележку трудно катить по лестнице: её приходится приподнимать, из-за чего человек устает и напрягает спину. В решении Upcart вместо одного колеса с каждой стороны использован блок из трёх колёс, благодаря чему тележка легче проходит ступеньки и неровности.*
 ## Описание
@@ -46,6 +47,8 @@ source: https://www.techinsider.ru/gadgets/238515-kak-legko-perevezti-gruz-po-st
 Корпус перемещает колеса
 Колеса толкают дорожное покрытие
 ## ТРИЗ-анализ
+
+
 Конкретная функция: колеса толкают дорогу
 Абстрактная функция: система тел толкает тело
 Поле на выходе: механическое
@@ -57,3 +60,46 @@ source: https://www.techinsider.ru/gadgets/238515-kak-legko-perevezti-gruz-po-st
 Проявившаяся закономерность: моно-би-поли
 Вредная конкретная функция: ступени задерживают тележку
 Вредная абстрактная функция: тело задерживает тело
+
+<!-- AUTO-VEPOL:START -->
+
+## Функциональный веполь
+
+<div class="functional-vepol" style="max-width: 920px; margin: 24px 0;">
+<svg viewBox="0 0 960 360" width="100%" role="img" aria-label="Функциональный веполь" style="display: block; max-width: 100%; height: auto;">
+  <defs>
+    <marker id="vepol-arrow" markerWidth="28" markerHeight="28" refX="24" refY="14" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M4,4 L24,14 L4,24 Z" fill="#2f2f2f" />
+    </marker>
+  </defs>
+  <style>
+    .vepol-title { font: 700 34px Georgia, "Times New Roman", serif; fill: #1f1f1f; }
+    .vepol-sub { font: 28px Georgia, "Times New Roman", serif; fill: #1f1f1f; }
+    .vepol-value { font: 28px Georgia, "Times New Roman", serif; fill: #1f1f1f; }
+    .vepol-arrow { stroke: #303030; stroke-width: 7; stroke-linecap: square; marker-end: url(#vepol-arrow); }
+    .vepol-label { font: italic 24px Georgia, "Times New Roman", serif; fill: #c71818; }
+    .vepol-prod-label { font: italic 24px Georgia, "Times New Roman", serif; fill: #1f1f1f; }
+  </style>
+  <text x="315" y="56" text-anchor="middle" class="vepol-title">П2</text>
+  <text x="315" y="96" text-anchor="middle" class="vepol-sub">поле взаимодействия</text>
+  <text x="315" y="132" text-anchor="middle" class="vepol-value">(механическое)</text>
+  <text x="770" y="56" text-anchor="middle" class="vepol-title">П1</text>
+  <text x="770" y="96" text-anchor="middle" class="vepol-sub">поле взаимодействия</text>
+  <text x="770" y="132" text-anchor="middle" class="vepol-value">(механическое)</text>
+  <text x="120" y="292" text-anchor="middle" class="vepol-title">В1</text>
+  <text x="120" y="330" text-anchor="middle" class="vepol-sub">(изделие)</text>
+  <text x="120" y="356" text-anchor="middle" class="vepol-value">груз</text>
+  <text x="505" y="292" text-anchor="middle" class="vepol-title">В2</text>
+  <text x="505" y="330" text-anchor="middle" class="vepol-sub">(инструмент)</text>
+  <text x="505" y="356" text-anchor="middle" class="vepol-value">тело</text>
+  <line x1="210" y1="160" x2="155" y2="242" class="vepol-arrow"></line>
+  <text x="183" y="210" text-anchor="middle" transform="rotate(-58 183 210)" class="vepol-label">перемещать</text>
+  <line x1="505" y1="240" x2="455" y2="158" class="vepol-arrow"></line>
+  <text x="525" y="198" text-anchor="middle" transform="rotate(58 525 198)" class="vepol-prod-label">производит</text>
+  <line x1="655" y1="160" x2="585" y2="242" class="vepol-arrow"></line>
+  <text x="625" y="207" text-anchor="middle" transform="rotate(-50 625 207)" class="vepol-label">воздействие</text>
+</svg>
+</div>
+
+<!-- AUTO-VEPOL:END -->
+
