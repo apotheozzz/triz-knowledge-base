@@ -68,41 +68,35 @@ source: https://www.techinsider.ru/gadgets/238515-kak-legko-perevezti-gruz-po-st
 
 <!-- AUTO-VEPOL:START -->
 
-## Функциональный веполь
+## Функционально-вепольная формула эффекта
 
-<div class="functional-vepol" style="max-width: 920px; margin: 24px 0;">
-<svg viewBox="0 0 960 360" width="100%" role="img" aria-label="Функциональный веполь" style="display: block; max-width: 100%; height: auto;">
+<div class="functional-vepol" style="max-width: 1040px; margin: 24px 0;">
+<svg viewBox="0 0 1120 360" width="100%" role="img" aria-label="Функциональный веполь" style="display: block; max-width: 100%; height: auto;">
   <defs>
-    <marker id="vepol-arrow" markerWidth="28" markerHeight="28" refX="24" refY="14" orient="auto" markerUnits="userSpaceOnUse">
-      <path d="M4,4 L24,14 L4,24 Z" fill="#2f2f2f" />
+    <marker id="vepol-arrow" viewBox="0 0 30 18" markerWidth="30" markerHeight="18" refX="29" refY="9" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M1,1 L29,9 L1,17 Z" fill="#2f2f2f" />
     </marker>
   </defs>
   <style>
-    .vepol-title { font: 700 34px Georgia, "Times New Roman", serif; fill: #1f1f1f; }
-    .vepol-sub { font: 28px Georgia, "Times New Roman", serif; fill: #1f1f1f; }
-    .vepol-value { font: 28px Georgia, "Times New Roman", serif; fill: #1f1f1f; }
-    .vepol-arrow { stroke: #303030; stroke-width: 7; stroke-linecap: square; marker-end: url(#vepol-arrow); }
-    .vepol-label { font: italic 24px Georgia, "Times New Roman", serif; fill: #c71818; }
-    .vepol-prod-label { font: italic 24px Georgia, "Times New Roman", serif; fill: #1f1f1f; }
+    .vepol-field { font: 700 32px Georgia, "Times New Roman", serif; fill: #1f1f1f; }
+    .vepol-sub { font: 26px Georgia, "Times New Roman", serif; fill: #1f1f1f; }
+    .vepol-object { font: 700 30px Georgia, "Times New Roman", serif; fill: #1f1f1f; }
+    .vepol-arrow { stroke: #303030; stroke-width: 6; stroke-linecap: butt; marker-end: url(#vepol-arrow); }
+    .vepol-verb { font: italic 20px Georgia, "Times New Roman", serif; fill: #1f1f1f; }
   </style>
-  <text x="315" y="56" text-anchor="middle" class="vepol-title">П2</text>
-  <text x="315" y="96" text-anchor="middle" class="vepol-sub">поле взаимодействия</text>
-  <text x="315" y="132" text-anchor="middle" class="vepol-value">(механическое)</text>
-  <text x="770" y="56" text-anchor="middle" class="vepol-title">П1</text>
-  <text x="770" y="96" text-anchor="middle" class="vepol-sub">поле взаимодействия</text>
-  <text x="770" y="132" text-anchor="middle" class="vepol-value">(механическое)</text>
-  <text x="120" y="292" text-anchor="middle" class="vepol-title">В1</text>
-  <text x="120" y="330" text-anchor="middle" class="vepol-sub">(изделие)</text>
-  <text x="120" y="356" text-anchor="middle" class="vepol-value">груз</text>
-  <text x="505" y="292" text-anchor="middle" class="vepol-title">В2</text>
-  <text x="505" y="330" text-anchor="middle" class="vepol-sub">(инструмент)</text>
-  <text x="505" y="356" text-anchor="middle" class="vepol-value">тело</text>
-  <line x1="210" y1="160" x2="155" y2="242" class="vepol-arrow"></line>
-  <text x="183" y="210" text-anchor="middle" transform="rotate(-58 183 210)" class="vepol-label">перемещать</text>
-  <line x1="505" y1="240" x2="455" y2="158" class="vepol-arrow"></line>
-  <text x="525" y="198" text-anchor="middle" transform="rotate(58 525 198)" class="vepol-prod-label">производит</text>
-  <line x1="655" y1="160" x2="585" y2="242" class="vepol-arrow"></line>
-  <text x="625" y="207" text-anchor="middle" transform="rotate(-50 625 207)" class="vepol-label">воздействие</text>
+  <text x="360" y="70" text-anchor="middle" class="vepol-field">Механическое</text>
+  <text x="360" y="106" text-anchor="middle" class="vepol-sub">Поле Взаимодействия</text>
+  <text x="790" y="70" text-anchor="middle" class="vepol-field">Механическое</text>
+  <text x="790" y="106" text-anchor="middle" class="vepol-sub">Поле Взаимодействия</text>
+  <text x="220" y="292" text-anchor="middle" class="vepol-object">Опорная</text>
+  <text x="220" y="326" text-anchor="middle" class="vepol-object">Поверхность</text>
+  <text x="570" y="292" text-anchor="middle" class="vepol-object">Колеса</text>
+  <line x1="290" y1="138" x2="220" y2="258" class="vepol-arrow"></line>
+  <text x="238" y="190" text-anchor="middle" transform="rotate(-60 238 190)" class="vepol-verb">толкает</text>
+  <line x1="500" y1="258" x2="430" y2="138" class="vepol-arrow"></line>
+  <text x="492" y="190" text-anchor="middle" transform="rotate(60 492 190)" class="vepol-verb">производит</text>
+  <line x1="710" y1="138" x2="640" y2="258" class="vepol-arrow"></line>
+  <text x="662" y="190" text-anchor="middle" transform="rotate(-60 662 190)" class="vepol-verb">воздействует</text>
 </svg>
 </div>
 
