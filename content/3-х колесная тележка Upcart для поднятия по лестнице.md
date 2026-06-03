@@ -60,10 +60,10 @@ source: https://www.techinsider.ru/gadgets/238515-kak-legko-perevezti-gruz-po-st
 ## Функциональный принцип действия системы «Тележка»
 <div class="fchain-source" hidden aria-hidden="true">
 ...fchain
-Человек перемещает ручка тележки
-Ручка тележки перемещает корпус тележки
-Корпус тележки перемещает колеса
-Колеса толкают опорную поверхность
+человек перемещает ручка тележки
+ручка тележки перемещает корпус тележки
+корпус тележки перемещает колеса
+колеса толкают опорную поверхность
 ...
 </div>
 <!-- AUTO-FCHAIN:START -->
@@ -89,9 +89,9 @@ source: https://www.techinsider.ru/gadgets/238515-kak-legko-perevezti-gruz-po-st
     <line x1="770" y1="98" x2="836" y2="98" class="fchain-arrow" marker-end="url(#fchain-arrow-v93qdv)"></line>
     <text x="807" y="62" text-anchor="middle" class="fchain-action">толкают</text>
     <rect x="24" y="69" width="120" height="58" class="fchain-box"></rect>
-    <text x="84" y="103" text-anchor="middle" class="fchain-object">Человек</text>
+    <text x="84" y="103" text-anchor="middle" class="fchain-object">человек</text>
     <rect x="218" y="69" width="138" height="58" class="fchain-box"></rect>
-    <text x="287" y="103" text-anchor="middle" class="fchain-object">ручку тележки</text>
+    <text x="287" y="103" text-anchor="middle" class="fchain-object">ручка тележки</text>
     <rect x="430" y="69" width="146" height="58" class="fchain-box"></rect>
     <text x="503" y="103" text-anchor="middle" class="fchain-object">корпус тележки</text>
     <rect x="650" y="69" width="120" height="58" class="fchain-box"></rect>
@@ -111,7 +111,7 @@ source: https://www.techinsider.ru/gadgets/238515-kak-legko-perevezti-gruz-po-st
 **Поле на выходе:** механическое
 **Поле на входе:** механическое
 **Исходный недостаток:** энергозатратность перемещения тележки (при подъеме по лестнице)
-**Исходное противоречие условий:** Если сделать колесо большого диаметра, то тележку легко перемещать по ступенькам, но станет тяжелее перемещать по дороге. Если оставить колесо маленьким, то перемещать тележку по дороге будет легко, но по ступенькам тяжелее.
+**Исходное противоречие условий:** Если сделать колесо большого диаметра, то тележку легко перемещать по ступенькам, но станет тяжелее перемещать по опорной поверхности. Если оставить колесо маленьким, то перемещать тележку по опорной поверхности будет легко, но по ступенькам тяжелее.
 **Разрешение противоречия условий:** вместо 1-го большого колеса использовать поворотный блок из 3-х колес
 **Прием разрешения противоречия условий:** дробление
 **Проявившаяся закономерность:** моно-би-поли
