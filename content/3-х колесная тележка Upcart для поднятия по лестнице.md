@@ -9,7 +9,7 @@ tool_abstr:
   - тело
 action:
   - толкать
-object:
+product:
   - опорная поверхность
 object_abstr:
   - тело

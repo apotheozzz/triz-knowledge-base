@@ -6,7 +6,7 @@ configuration:
   enablePopovers: true
   analytics:
     provider: plausible
-  locale: en-US
+  locale: ru-RU
   baseUrl: triz-knowledge-base.pages.dev
   ignorePatterns:
     - private
@@ -244,10 +244,24 @@ plugins:
     options:
       includeAll: false
       includedProperties:
-        - description
         - tags
-        - aliases
-      excludedProperties: []
+        - tool
+        - action
+        - object
+        - product
+        - field_in
+        - field_out
+        - transformation
+        - law
+        - source
+      excludedProperties:
+        - tool_abstr
+        - object_abstr
+        - harmful_tool
+        - harmful_object
+        - harmful_action
+        - created
+        - layer
       hidePropertiesView: false
       delimiters: ---
       language: yaml
