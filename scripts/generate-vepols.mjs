@@ -94,8 +94,8 @@ function makeVepolSvg(data) {
   const action = actionVerb(data.action)
   const fieldOut = capitalizeFirstWord(data.field_out)
   const fieldIn = capitalizeFirstWord(data.field_in)
-  const objectText = wrappedText(capitalizeFirstWord(data.object), 220, 292, "vepol-object", 14)
-  const toolText = wrappedText(capitalizeFirstWord(data.tool), 570, 292, "vepol-object", 14)
+  const objectText = wrappedText(capitalizeFirstWord(data.object), 220, 292, "vepol-object", 18)
+  const toolText = wrappedText(capitalizeFirstWord(data.tool), 570, 292, "vepol-object", 18)
 
   return `<div class="functional-vepol" style="max-width: 1040px; margin: 24px 0;">
 <svg viewBox="0 0 1120 360" width="100%" role="img" aria-label="Вепольно-функциональная формула эффекта" style="display: block; max-width: 100%; height: auto;">
@@ -148,7 +148,7 @@ for (const file of walk(contentDir)) {
   const data = {
     tool: normalizeYamlValue(yaml.tool),
     action: normalizeYamlValue(yaml.action),
-    object: normalizeYamlValue(yaml.object),
+    object: normalizeYamlValue(yaml.product ?? yaml.object),
     field_in: normalizeYamlValue(yaml.field_in),
     field_out: normalizeYamlValue(yaml.field_out),
   }
@@ -162,7 +162,7 @@ for (const file of walk(contentDir)) {
     ""
   )
 
-  const trizSection = next.match(/^##\s+ТРИЗ-анализ\s*$/m)
+  const trizSection = next.match(/^##\s+(?:Краткий\s+)?ТРИЗ-анализ\s*$/m)
 
 if (trizSection) {
   const sectionStart = trizSection.index + trizSection[0].length
