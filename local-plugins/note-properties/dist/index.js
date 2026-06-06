@@ -10717,7 +10717,7 @@ function i18n(locale) {
 }
 
 // src/components/styles/noteProperties.scss
-var noteProperties_default = '.note-properties {\n  margin: 0.5rem 0 1rem;\n  border: 1px solid var(--lightgray);\n  border-radius: 5px;\n  font-size: 0.9rem;\n}\n.note-properties[open] > .note-properties-header {\n  border-bottom: 1px solid var(--lightgray);\n}\n.note-properties .note-properties-header {\n  display: flex;\n  align-items: center;\n  gap: 0.5rem;\n  padding: 0.4rem 0.8rem;\n  cursor: pointer;\n  user-select: none;\n  list-style: none;\n  color: var(--darkgray);\n  font-weight: 600;\n}\n.note-properties .note-properties-header::-webkit-details-marker {\n  display: none;\n}\n.note-properties .note-properties-header::before {\n  content: "";\n  display: inline-block;\n  width: 0.5em;\n  height: 0.5em;\n  border-right: 2px solid var(--darkgray);\n  border-bottom: 2px solid var(--darkgray);\n  transform: rotate(-45deg);\n  transition: transform 0.2s ease;\n}\n.note-properties[open] > .note-properties-header::before {\n  transform: rotate(45deg);\n}\n.note-properties .note-properties-count {\n  margin-left: auto;\n  font-size: 0.75rem;\n  color: var(--gray);\n  font-weight: 400;\n}\n.note-properties .note-properties-title {\n  font-size: 1rem;\n}\n.note-properties .note-properties-table {\n  width: 100%;\n  border-collapse: collapse;\n  table-layout: fixed;\n}\n.note-properties .note-properties-row {\n  border-bottom: 1px solid var(--lightgray);\n}\n.note-properties .note-properties-row:last-child {\n  border-bottom: none;\n}\n.note-properties .note-properties-key {\n  width: 35%;\n  padding: 0.35rem 0.8rem;\n  color: var(--gray);\n  font-size: 0.85rem;\n  vertical-align: top;\n  word-break: break-word;\n}\n.note-properties .note-properties-value {\n  padding: 0.35rem 0.8rem;\n  vertical-align: top;\n  word-break: break-word;\n}\n.note-properties .note-properties-empty {\n  color: var(--gray);\n  font-style: italic;\n}\n.note-properties .note-properties-boolean input[type=checkbox] {\n  pointer-events: none;\n  margin: 0;\n  vertical-align: middle;\n}\n.note-properties .note-properties-number {\n  font-family: var(--codeFont);\n  font-size: 0.85em;\n}\n.note-properties .note-properties-link {\n  text-decoration: none;\n  color: var(--secondary);\n}\n.note-properties .note-properties-link:hover {\n  text-decoration: underline;\n}\n.note-properties .note-properties-separator {\n  color: var(--gray);\n}\n.note-properties .note-properties-list {\n  display: inline;\n}\n.note-properties .note-properties-tags {\n  display: inline-flex;\n  flex-wrap: wrap;\n  gap: 0.25rem;\n}\n.note-properties .note-properties-chip {\n  display: inline;\n  padding: 0;\n  border-radius: 0;\n  background: transparent;\n  color: inherit;\n  font-size: inherit;\n  text-decoration: none;\n}\n.note-properties .note-properties-chip .note-properties-link {\n  color: inherit;\n}\n.note-properties .note-properties-tags .tag-link.note-properties-chip {\n  display: inline-block;\n  padding: 0.1rem 0.4rem;\n  border-radius: 3px;\n  background: var(--highlight);\n  color: var(--secondary);\n  font-size: 0.85em;\n}\n.note-properties .note-properties-tags .tag-link.note-properties-chip:hover {\n  background: var(--secondary);\n  color: var(--light);\n  text-decoration: none;\n}\n.note-properties .note-properties-object code {\n  font-size: 0.85em;\n  padding: 0.1rem 0.3rem;\n  border-radius: 3px;\n  background: var(--highlight);\n  word-break: break-all;\n}';
+var noteProperties_default = '.note-properties {\n  margin: 0.5rem 0 1rem;\n  border: 1px solid var(--lightgray);\n  border-radius: 5px;\n  font-size: 0.9rem;\n}\n.note-properties[open] > .note-properties-header {\n  border-bottom: 1px solid var(--lightgray);\n}\n.note-properties .note-properties-header {\n  display: flex;\n  align-items: center;\n  gap: 0.5rem;\n  padding: 0.4rem 0.8rem;\n  cursor: pointer;\n  user-select: none;\n  list-style: none;\n  color: var(--darkgray);\n  font-weight: 600;\n}\n.note-properties .note-properties-header::-webkit-details-marker {\n  display: none;\n}\n.note-properties .note-properties-header::before {\n  content: "";\n  display: inline-block;\n  width: 0.5em;\n  height: 0.5em;\n  border-right: 2px solid var(--darkgray);\n  border-bottom: 2px solid var(--darkgray);\n  transform: rotate(-45deg);\n  transition: transform 0.2s ease;\n}\n.note-properties[open] > .note-properties-header::before {\n  transform: rotate(45deg);\n}\n.note-properties .note-properties-count {\n  margin-left: auto;\n  font-size: 0.75rem;\n  color: var(--gray);\n  font-weight: 400;\n}\n.note-properties .note-properties-title {\n  font-size: 1rem;\n}\n.note-properties .note-properties-table {\n  width: 100%;\n  border-collapse: collapse;\n  table-layout: fixed;\n}\n.note-properties .note-properties-row {\n  border-bottom: 1px solid var(--lightgray);\n}\n.note-properties .note-properties-row:last-child {\n  border-bottom: none;\n}\n.note-properties .note-properties-key {\n  width: 35%;\n  padding: 0.35rem 0.8rem;\n  color: var(--gray);\n  font-size: 0.85rem;\n  vertical-align: top;\n  word-break: break-word;\n}\n.note-properties .note-properties-value {\n  padding: 0.35rem 0.8rem;\n  vertical-align: top;\n  word-break: break-word;\n}\n.note-properties .note-properties-empty {\n  color: var(--gray);\n  font-style: italic;\n}\n.note-properties .note-properties-boolean input[type=checkbox] {\n  pointer-events: none;\n  margin: 0;\n  vertical-align: middle;\n}\n.note-properties .note-properties-number {\n  font-family: var(--codeFont);\n  font-size: 0.85em;\n}\n.note-properties .note-properties-link {\n  text-decoration: none;\n  color: var(--secondary);\n}\n.note-properties .note-properties-link:hover {\n  text-decoration: underline;\n}\n.note-properties .note-properties-separator {\n  color: var(--gray);\n}\n.note-properties .note-properties-list {\n  display: inline;\n}\n.note-properties .note-properties-tags {\n  display: inline-flex;\n  flex-wrap: wrap;\n  gap: 0.25rem;\n}\n.note-properties .note-properties-chip {\n  display: inline;\n  padding: 0;\n  border-radius: 0;\n  background: transparent;\n  color: inherit;\n  font-size: inherit;\n  text-decoration: none;\n}\n.note-properties .note-properties-chip .note-properties-link {\n  color: inherit;\n}\n.note-properties .note-properties-tags .tag-link.note-properties-chip {\n  display: inline-block;\n  padding: 0.1rem 0.4rem;\n  border-radius: 3px;\n  background: var(--highlight);\n  color: var(--secondary);\n  font-size: 0.85em;\n}\n.note-properties .note-properties-tags .tag-link.note-properties-chip:hover {\n  background: var(--secondary);\n  color: var(--light);\n  text-decoration: none;\n}\n.note-properties .note-properties-object code {\n  font-size: 0.85em;\n  padding: 0.1rem 0.3rem;\n  border-radius: 3px;\n  background: var(--highlight);\n  word-break: break-all;\n}\n\n.note-properties-container {\n  margin: 0.5rem 0 1rem;\n}\n.note-properties-container > .note-properties {\n  margin: 0;\n}\n.note-properties-container > .note-properties.has-pinned-tags {\n  border-radius: 5px 5px 0 0;\n}\n.note-properties-container > .note-properties-pinned-tags {\n  border-top: 0;\n  border-radius: 0 0 5px 5px;\n}';
 
 // src/components/scripts/noteProperties.inline.ts
 var noteProperties_inline_default = 'var o="note-properties-collapsed";function d(){let e=document.querySelector("details.note-properties");if(!e)return;let t=localStorage.getItem(o);if(t!==null){let i=t==="true";e.open=!i}let n=()=>{localStorage.setItem(o,String(!e.open))};e.addEventListener("toggle",n),typeof window<"u"&&window.addCleanup&&window.addCleanup(()=>{e.removeEventListener("toggle",n)})}document.addEventListener("nav",()=>{d()});document.addEventListener("render",()=>{d()});\n';
@@ -10727,6 +10727,7 @@ var WIKILINK_RE = /\[\[([^\]|]+)(?:\|([^\]]+))?\]\]/g;
 var MDLINK_RE = /\[([^\]]*)\]\(([^)]+)\)/g;
 var URL_RE = /https?:\/\/[^\s<>]+/g;
 var PROPERTY_LABELS = {
+  tags: "\u041C\u0435\u0442\u043A\u0438",
   tool: "\u0418\u043D\u0441\u0442\u0440\u0443\u043C\u0435\u043D\u0442",
   action: "\u0414\u0435\u0439\u0441\u0442\u0432\u0438\u0435",
   object: "\u0418\u0437\u0434\u0435\u043B\u0438\u0435",
@@ -10913,8 +10914,12 @@ var NoteProperties_default = ((opts) => {
     if (noteProps.showProperties === false) return null;
     if (noteProps.showProperties !== true && noteProps.hideView) return null;
     const properties = noteProps.properties;
-    const entries = Object.entries(properties);
-    if (entries.length === 0) return null;
+    const entries = Object.entries(properties).filter(([key]) => key !== "tags");
+    const rawTags = properties.tags;
+    const tags = (Array.isArray(rawTags) ? rawTags : rawTags !== void 0 ? [rawTags] : []).map(
+      String
+    );
+    if (entries.length === 0 && tags.length === 0) return null;
     const locale = props.cfg?.locale || "en-US";
     const i18nData = i18n(locale);
     const ctx = {
@@ -10922,24 +10927,34 @@ var NoteProperties_default = ((opts) => {
       resolvedLinks: noteProps.resolvedLinks ?? {}
     };
     const isCollapsed = noteProps.collapseProperties ?? collapsed;
-    return /* @__PURE__ */ u2(
-      "details",
-      {
-        class: classNames(props.displayClass, "note-properties", "metadata-container"),
-        open: !isCollapsed,
-        "data-collapsed": isCollapsed,
-        children: [
-          /* @__PURE__ */ u2("summary", { class: "note-properties-header", children: [
-            /* @__PURE__ */ u2("span", { class: "note-properties-title", children: i18nData.components.noteProperties.title }),
-            /* @__PURE__ */ u2("span", { class: "note-properties-count", children: entries.length })
-          ] }),
-          /* @__PURE__ */ u2("table", { class: "note-properties-table", children: /* @__PURE__ */ u2("tbody", { children: entries.map(([key, value2]) => /* @__PURE__ */ u2("tr", { class: "note-properties-row metadata-property", children: [
-            /* @__PURE__ */ u2("td", { class: "note-properties-key metadata-property-key", children: propertyLabel(key) }),
-            /* @__PURE__ */ u2("td", { class: "note-properties-value metadata-property-value", children: key === "tags" && Array.isArray(value2) ? renderTagList(value2, ctx) : renderPropertyValue(key, value2, ctx) })
-          ] }, key)) }) })
-        ]
-      }
-    );
+    return /* @__PURE__ */ u2("div", { class: classNames(props.displayClass, "note-properties-container"), children: [
+      entries.length > 0 && /* @__PURE__ */ u2(
+        "details",
+        {
+          class: classNames(
+            "note-properties",
+            "metadata-container",
+            tags.length > 0 && "has-pinned-tags"
+          ),
+          open: !isCollapsed,
+          "data-collapsed": isCollapsed,
+          children: [
+            /* @__PURE__ */ u2("summary", { class: "note-properties-header", children: [
+              /* @__PURE__ */ u2("span", { class: "note-properties-title", children: i18nData.components.noteProperties.title }),
+              /* @__PURE__ */ u2("span", { class: "note-properties-count", children: entries.length })
+            ] }),
+            /* @__PURE__ */ u2("table", { class: "note-properties-table", children: /* @__PURE__ */ u2("tbody", { children: entries.map(([key, value2]) => /* @__PURE__ */ u2("tr", { class: "note-properties-row metadata-property", children: [
+              /* @__PURE__ */ u2("td", { class: "note-properties-key metadata-property-key", children: propertyLabel(key) }),
+              /* @__PURE__ */ u2("td", { class: "note-properties-value metadata-property-value", children: renderPropertyValue(key, value2, ctx) })
+            ] }, key)) }) })
+          ]
+        }
+      ),
+      tags.length > 0 && /* @__PURE__ */ u2("div", { class: "note-properties note-properties-pinned-tags", children: /* @__PURE__ */ u2("table", { class: "note-properties-table", children: /* @__PURE__ */ u2("tbody", { children: /* @__PURE__ */ u2("tr", { class: "note-properties-row metadata-property", children: [
+        /* @__PURE__ */ u2("td", { class: "note-properties-key metadata-property-key", children: propertyLabel("tags") }),
+        /* @__PURE__ */ u2("td", { class: "note-properties-value metadata-property-value", children: renderTagList(tags, ctx) })
+      ] }) }) }) })
+    ] });
   };
   Component.css = noteProperties_default;
   Component.afterDOMLoaded = noteProperties_inline_default;

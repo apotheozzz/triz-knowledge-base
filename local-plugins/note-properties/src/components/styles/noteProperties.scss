@@ -159,3 +159,20 @@
     }
   }
 }
+
+.note-properties-container {
+  margin: 0.5rem 0 1rem;
+
+  > .note-properties {
+    margin: 0;
+  }
+
+  > .note-properties.has-pinned-tags {
+    border-radius: 5px 5px 0 0;
+  }
+
+  > .note-properties-pinned-tags {
+    border-top: 0;
+    border-radius: 0 0 5px 5px;
+  }
+}

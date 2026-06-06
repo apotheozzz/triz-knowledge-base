@@ -21,6 +21,7 @@ const URL_RE = /https?:\/\/[^\s<>]+/g;
 type RenderCtx = { slug: string; resolvedLinks: Record<string, string> };
 
 const PROPERTY_LABELS: Record<string, string> = {
+  tags: "Метки",
   tool: "Инструмент",
   action: "Действие",
   object: "Изделие",
@@ -279,8 +280,12 @@ export default ((opts?: NotePropertiesComponentOptions) => {
     if (noteProps.showProperties !== true && noteProps.hideView) return null;
 
     const properties = noteProps.properties;
-    const entries = Object.entries(properties);
-    if (entries.length === 0) return null;
+    const entries = Object.entries(properties).filter(([key]) => key !== "tags");
+    const rawTags = properties.tags;
+    const tags = (Array.isArray(rawTags) ? rawTags : rawTags !== undefined ? [rawTags] : []).map(
+      String,
+    );
+    if (entries.length === 0 && tags.length === 0) return null;
 
     const locale = props.cfg?.locale || "en-US";
     const i18nData = i18n(locale);
@@ -292,30 +297,50 @@ export default ((opts?: NotePropertiesComponentOptions) => {
     // Per-note collapse override takes precedence over component option
     const isCollapsed = noteProps.collapseProperties ?? collapsed;
     return (
-      <details
-        class={classNames(props.displayClass, "note-properties", "metadata-container")}
-        open={!isCollapsed}
-        data-collapsed={isCollapsed}
-      >
-        <summary class="note-properties-header">
-          <span class="note-properties-title">{i18nData.components.noteProperties.title}</span>
-          <span class="note-properties-count">{entries.length}</span>
-        </summary>
-        <table class="note-properties-table">
-          <tbody>
-            {entries.map(([key, value]) => (
-              <tr key={key} class="note-properties-row metadata-property">
-                <td class="note-properties-key metadata-property-key">{propertyLabel(key)}</td>
-                <td class="note-properties-value metadata-property-value">
-                  {key === "tags" && Array.isArray(value)
-                    ? renderTagList(value as string[], ctx)
-                    : renderPropertyValue(key, value, ctx)}
-                </td>
-              </tr>
-            ))}
-          </tbody>
-        </table>
-      </details>
+      <div class={classNames(props.displayClass, "note-properties-container")}>
+        {entries.length > 0 && (
+          <details
+            class={classNames(
+              "note-properties",
+              "metadata-container",
+              tags.length > 0 && "has-pinned-tags",
+            )}
+            open={!isCollapsed}
+            data-collapsed={isCollapsed}
+          >
+            <summary class="note-properties-header">
+              <span class="note-properties-title">{i18nData.components.noteProperties.title}</span>
+              <span class="note-properties-count">{entries.length}</span>
+            </summary>
+            <table class="note-properties-table">
+              <tbody>
+                {entries.map(([key, value]) => (
+                  <tr key={key} class="note-properties-row metadata-property">
+                    <td class="note-properties-key metadata-property-key">{propertyLabel(key)}</td>
+                    <td class="note-properties-value metadata-property-value">
+                      {renderPropertyValue(key, value, ctx)}
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </details>
+        )}
+        {tags.length > 0 && (
+          <div class="note-properties note-properties-pinned-tags">
+            <table class="note-properties-table">
+              <tbody>
+                <tr class="note-properties-row metadata-property">
+                  <td class="note-properties-key metadata-property-key">{propertyLabel("tags")}</td>
+                  <td class="note-properties-value metadata-property-value">
+                    {renderTagList(tags, ctx)}
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        )}
+      </div>
     );
   };
 
