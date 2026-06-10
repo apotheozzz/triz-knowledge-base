@@ -30,7 +30,7 @@ const PROPERTY_LABELS: Record<string, string> = {
   field_out: "Поле на выходе",
   transformation: "Преобразование",
   law: "Закономерность",
-  source: "Источник",
+  source_true: "Источник",
 };
 
 function propertyLabel(key: string): string {
@@ -206,7 +206,7 @@ function renderChipList(key: string, values: unknown[], ctx: RenderCtx): preact.
       );
     }
 
-    if (key === "source" && typeof item === "string" && isExternalUrl(item)) {
+    if (key === "source_true" && typeof item === "string" && isExternalUrl(item)) {
       return (
         <a
           key={idx}
@@ -220,7 +220,7 @@ function renderChipList(key: string, values: unknown[], ctx: RenderCtx): preact.
       );
     }
 
-    const rendered = key === "source" ? renderSourceValue(item, ctx) : renderValue(item, ctx);
+    const rendered = key === "source_true" ? renderSourceValue(item, ctx) : renderValue(item, ctx);
     return (
       <span key={idx} class="note-properties-chip">
         {rendered}
@@ -240,7 +240,7 @@ function renderPropertyValue(
     return renderChipList(key, value, ctx);
   }
 
-  if (key === "source") {
+  if (key === "source_true") {
     return renderSourceValue(value, ctx);
   }
 

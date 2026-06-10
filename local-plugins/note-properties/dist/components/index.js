@@ -177,7 +177,7 @@ var PROPERTY_LABELS = {
   field_out: "\u041F\u043E\u043B\u0435 \u043D\u0430 \u0432\u044B\u0445\u043E\u0434\u0435",
   transformation: "\u041F\u0440\u0435\u043E\u0431\u0440\u0430\u0437\u043E\u0432\u0430\u043D\u0438\u0435",
   law: "\u0417\u0430\u043A\u043E\u043D\u043E\u043C\u0435\u0440\u043D\u043E\u0441\u0442\u044C",
-  source: "\u0418\u0441\u0442\u043E\u0447\u043D\u0438\u043A"
+  source_true: "\u0418\u0441\u0442\u043E\u0447\u043D\u0438\u043A"
 };
 function propertyLabel(key) {
   return PROPERTY_LABELS[key] ?? key;
@@ -313,7 +313,7 @@ function renderChipList(key, values, ctx) {
       const href = resolveRelative(ctx.slug, `tags/${tag}`);
       return /* @__PURE__ */ u2("a", { href, class: "internal internal-link tag-link note-properties-chip", children: tag }, idx);
     }
-    if (key === "source" && typeof item === "string" && isExternalUrl(item)) {
+    if (key === "source_true" && typeof item === "string" && isExternalUrl(item)) {
       return /* @__PURE__ */ u2(
         "a",
         {
@@ -326,7 +326,7 @@ function renderChipList(key, values, ctx) {
         idx
       );
     }
-    const rendered = key === "source" ? renderSourceValue(item, ctx) : renderValue(item, ctx);
+    const rendered = key === "source_true" ? renderSourceValue(item, ctx) : renderValue(item, ctx);
     return /* @__PURE__ */ u2("span", { class: "note-properties-chip", children: rendered }, idx);
   });
   return /* @__PURE__ */ u2("span", { class: "note-properties-tags", children: items });
@@ -335,7 +335,7 @@ function renderPropertyValue(key, value, ctx) {
   if (Array.isArray(value)) {
     return renderChipList(key, value, ctx);
   }
-  if (key === "source") {
+  if (key === "source_true") {
     return renderSourceValue(value, ctx);
   }
   return renderValue(value, ctx);

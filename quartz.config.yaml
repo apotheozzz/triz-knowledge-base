@@ -252,7 +252,7 @@ plugins:
         - field_out
         - transformation
         - law
-        - source
+        - source_true
         - tags
       excludedProperties:
         - tool_abstr
