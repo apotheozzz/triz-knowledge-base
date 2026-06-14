@@ -30,7 +30,6 @@ tags:
   - прием_дробление
   - закономерность_моно-би-поли
   - действие_толкать
-  - тележка
   - колеса
   - опорная_поверхность
 ---
@@ -75,7 +74,7 @@ tags:
 <div class="functional-chain" style="max-width: 1054px; margin: 24px 0; overflow-x: auto;">
 <svg viewBox="0 0 1054 132" width="100%" role="img" aria-label="Функциональная цепочка" style="display: block; max-width: 100%; height: auto;">
   <defs>
-    <marker id="fchain-arrow-v93qdv" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto" markerUnits="strokeWidth">
+    <marker id="fchain-arrow-4x3m7o" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto" markerUnits="strokeWidth">
       <path d="M 0 0 L 8 4 L 0 8 z" fill="#1f1f1f" />
     </marker>
   </defs>
@@ -85,13 +84,13 @@ tags:
     .fchain-object { font: 700 15px Arial, sans-serif; fill: #1f1f1f; }
     .fchain-action { font: 700 14px Arial, sans-serif; fill: #1f1f1f; }
   </style>
-    <line x1="144" y1="98" x2="210" y2="98" class="fchain-arrow" marker-end="url(#fchain-arrow-v93qdv)"></line>
+    <line x1="144" y1="98" x2="210" y2="98" class="fchain-arrow" marker-end="url(#fchain-arrow-4x3m7o)"></line>
     <text x="181" y="62" text-anchor="middle" class="fchain-action">перемещает</text>
-    <line x1="356" y1="98" x2="422" y2="98" class="fchain-arrow" marker-end="url(#fchain-arrow-v93qdv)"></line>
+    <line x1="356" y1="98" x2="422" y2="98" class="fchain-arrow" marker-end="url(#fchain-arrow-4x3m7o)"></line>
     <text x="393" y="62" text-anchor="middle" class="fchain-action">перемещает</text>
-    <line x1="576" y1="98" x2="642" y2="98" class="fchain-arrow" marker-end="url(#fchain-arrow-v93qdv)"></line>
+    <line x1="576" y1="98" x2="642" y2="98" class="fchain-arrow" marker-end="url(#fchain-arrow-4x3m7o)"></line>
     <text x="613" y="62" text-anchor="middle" class="fchain-action">перемещает</text>
-    <line x1="770" y1="98" x2="836" y2="98" class="fchain-arrow" marker-end="url(#fchain-arrow-v93qdv)"></line>
+    <line x1="770" y1="98" x2="836" y2="98" class="fchain-arrow" marker-end="url(#fchain-arrow-4x3m7o)"></line>
     <text x="807" y="62" text-anchor="middle" class="fchain-action">толкают</text>
     <rect x="24" y="69" width="120" height="58" class="fchain-box"></rect>
     <text x="84" y="103" text-anchor="middle" class="fchain-object">человек</text>

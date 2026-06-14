@@ -217,13 +217,14 @@ function replaceFchainBlocks(text, file) {
     const leadingBreak = after.match(/^\r?\n*/)
     const afterLeadingBreakIndex = cursor + (leadingBreak ? leadingBreak[0].length : 0)
     const restAfterBreak = text.slice(afterLeadingBreakIndex)
-    const existingMatch = restAfterBreak.match(new RegExp(`^${startMarker.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}[\\s\\S]*?${endMarker.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}\\r?\\n?`))
+    const existingMatch = restAfterBreak.match(new RegExp(`^${startMarker.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}[\\s\\S]*?${endMarker.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}(?:\\r?\\n)*`))
 
     if (existingMatch) {
-      result += "\n" + autoBlock
+      const replacement = `\n${autoBlock}\n`
+      result += replacement
       const oldAutoBlock = text.slice(cursor, afterLeadingBreakIndex + existingMatch[0].length)
       cursor = afterLeadingBreakIndex + existingMatch[0].length
-      if (`\n${autoBlock}` !== oldAutoBlock) changed = true
+      if (replacement !== oldAutoBlock) changed = true
     } else {
       result += "\n" + autoBlock
       changed = true
@@ -234,7 +235,13 @@ function replaceFchainBlocks(text, file) {
 
   result += text.slice(cursor)
 
-  return { text: result, changed, count }
+  const boundaryFixed = result.replace(
+    new RegExp(`${endMarker.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}\\r?\\n(?!\\r?\\n)`, "g"),
+    `${endMarker}\n\n`,
+  )
+  if (boundaryFixed !== result) changed = true
+
+  return { text: boundaryFixed, changed, count }
 }
 
 for (const file of walk(contentDir)) {
